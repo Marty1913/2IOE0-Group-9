@@ -10,6 +10,7 @@ public class GUIStateManager {
     public static enum GameStates {
         INTRO, MAIN_MENU, GAME, PAUSE;
     }
+
     public static GameStates gameStates;
     public static Intro intro;
     public static MainMenu mainMenu;
@@ -17,7 +18,7 @@ public class GUIStateManager {
     public static Pause pause;
 
     //For every update we do, we check the current state of the game
-    public static void update() {
+    public static void checkState() {
         switch(gameStates) {
             case INTRO:
                 if (intro == null) {

@@ -14,6 +14,7 @@ public class App {
 		windowManager = new WindowManager();
 
 		windowManager.start();
+		GUIStateManger.checkState();
 		guiManager.setCurrentGuiState(new MenuGUIState());
 		//DO NOTHING AS THE GUISTATE HANDLES THREADING
 		wait();
